@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border box;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,8 +16,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 50px;
-  box-shadow: 0 8px 24px rgba (0, 0, 0, 0.2);
-  background-color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background: white;
   position: fixed;
   width: 100%;
 }
@@ -37,7 +37,7 @@ body {
   display: none;
 }
 
-#tooggle-menu {
+#toggle-menu {
   display: none;
 }
 
@@ -51,7 +51,7 @@ body {
   .navbar ul {
     background: white;
     width: 100%;
-    height: calc(100vh-80px);
+    height: calc(100vh - 80px);
     position: absolute;
     top: 80px;
     left: 0;
@@ -64,4 +64,8 @@ body {
   .navbar i {
     display: block;
   }
+}
+
+#toogle-menu:checked ~ .navbar-list {
+  display: flex;
 }
