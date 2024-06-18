@@ -25,3 +25,56 @@
 .traslateX {
   transform: translateX(100px);
 }
+
+@keyframes nombreAnimacion {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes translateX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}
+
+.translateX {
+  animation-name: translateX;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes translateY {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+.translateY {
+  animation: translateY 2s infinite;
+}
+
+@keyframes translate {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(300px, 25px);
+  }
+}
+
+.translate {
+  animation: translate 5s 2;
+}
