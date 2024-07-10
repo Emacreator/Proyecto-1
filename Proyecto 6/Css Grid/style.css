@@ -53,3 +53,62 @@ h2 {
   grid-template-columns: 200px 200px 200px;
   gap: 1rem;
 }
+
+.grid-row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 100px 300px;
+  grid-template-rows: 250px 80px;
+}
+
+.grid-fr {
+  width: 500px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.grid-repeat {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 1rem;
+}
+
+.grid-areas {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "navbar header header"
+    "navbar contenido sidebar"
+    "navbar footer footer";
+}
+
+.nav {
+  grid-area: navbar;
+  background: crimson;
+  padding: 2rem;
+}
+
+.header {
+  grid-area: header;
+  background: #8c00ff;
+  height: 50px;
+}
+
+.content {
+  grid-area: contenido;
+  background: #00ff5c;
+  height: 50px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #8c00ff;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: red;
+}
