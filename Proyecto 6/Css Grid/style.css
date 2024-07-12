@@ -27,6 +27,7 @@ h1 {
 
 .hr {
   height: 7px;
+  width: 75%;
   background-color: rgb(68, 0, 255);
 }
 h2 {
@@ -111,4 +112,34 @@ h2 {
 .sidebar {
   grid-area: sidebar;
   background: red;
+}
+
+.justify-align-items {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  gap: 1rem;
+  grid-template-rows: repeat(2, 50px);
+  /*justify-items: center;*/
+  /*align-items: center;*/
+  place-items: center start;
+}
+
+.justify-align-content {
+  width: 600px;
+  height: 500px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 150px);
+  /*justify-content: center;*/
+  /*align-content: center;*/
+  place-content: space-between space-between;
+}
+
+.grid-auto {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-auto-columns: 250px;
+  grid-auto-rows: 100px;
 }
