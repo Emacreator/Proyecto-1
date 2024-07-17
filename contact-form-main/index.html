@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main>
+      <section class="card-form">
+        <h1>Contact Us</h1>
+      
+        <form>
+          
+          <!--Contiene First name y last name-->
+            <div class="name-box">
+    
+              <div class="name">
+                <div>
+                  <label for="nombre">First Name *<span class="Info"></span></label>
+                  <div>
+                    <input type="text" id="nombre" class="input">
+                  </div>
+                </div>
+              </div>
+              <div class="last">
+                <div>
+                  <label for="apellido">Last Name *<span class="Info"></span></label>
+                  <div>
+                    <input type="text" id="apellido" class="input">
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="email-caja">
+            <div>
+              <label for="email">Email Adress *<span class="Info"></span></label>
+              <div>
+                <input type="email" id="email" class="input">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>Query Type *<span class="Info"></span></p>
+          </div>
+
+          <div class="query-caja">
+           
+            <div class="query">
+      
+              <div class="query-container focus-query">
+                <input type="radio" id="general-enquiry" class="focus-query" name="query">
+                <label for="general-enquiry">General Enquiry</label>
+              </div>
+                
+                
+              <div class="query-container ">
+                <input type="radio" id="support-enquiry" name="query">
+                <label for="support-enquiry">Support Enquiry</label>
+              </div>   
+
+            </div>
+
+          </div>
+
+          <div class="message-caja">
+            <p>Message *<span class="Info"></span></p>
+            <div>
+              <label for="message"></label>
+              <div>
+                <textarea name="message" id="message" class="input"></textarea>
+              </div>
+          </div>
+
+          <div class="terms">
+            <input type="checkbox" id="cbx2">
+            <label for="cbx2">I consent to being contacted by the team *</label>
+          </div>
+
+        </form>
+
+        <button class="btn">Submit</button>
+      </section>   
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
