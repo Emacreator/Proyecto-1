@@ -12,7 +12,7 @@
 
     <!--Grid template Column-->
     <h2>Grid Template Columns</h2>
-    <div class="code">grid template columns: 100px 100px</div>
+    <div class="code">grid-template-columns: 100px 100px</div>
 
     <div class="container">
       <div class="grid-column">
@@ -23,7 +23,7 @@
     <hr class="hr" />
     <!--Grid Template Rows-->
     <h2>Grid Template Rows</h2>
-    <div class="code">Grid template rows: 250px 80px</div>
+    <div class="code">grid-template-rows: 250px 80px</div>
 
     <div class="container">
       <div class="grid-row">
@@ -51,8 +51,8 @@
     <!--Repeat-->
     <h2>Repeat</h2>
 
-    <div class="code">grid template columns: repeat(2, 250px)</div>
-    <div class="code">grid template rows: repeat(2,100px)</div>
+    <div class="code">grid-template-columns: repeat(2, 250px)</div>
+    <div class="code">grid-template-rows: repeat(2,100px)</div>
 
     <div class="container">
       <div class="grid-repeat">
@@ -108,7 +108,7 @@
 
     <!--Grid Auto Flow-->
     <h2>Grid auto flow / Grid auto rows</h2>
-    <div class="code">Grid Auto Flow:Column</div>
+    <div class="code">grid-auto-flow:column</div>
 
     <div class="container">
       <div class="grid-auto">
@@ -116,6 +116,54 @@
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
         <div class="item">Item 4</div>
+      </div>
+    </div>
+    <hr class="hr" />
+    <!--Propiedades para items hijos-->
+
+    <h2>Propiedades para items hijos</h2>
+    <div class="code">grid-column-start/end</div>
+    <div class="code">grid-row-start/end</div>
+    <div class="container">
+      <div class="grid-start-end">
+        <div class="item hijo">item 1</div>
+        <div class="item hijo">item 2</div>
+        <div class="item hijo">item 3</div>
+        <div class="item hijo">item 4</div>
+        <div class="item hijo">item 5</div>
+        <div class="item hijo">item 6</div>
+      </div>
+    </div>
+
+    <hr class="hr" />
+    <h2>Atajo</h2>
+    <div class="code">grid-column: 1/3</div>
+    <div class="code">grid-row: 1/4</div>
+
+    <div class="container">
+      <div class="grid-start-end">
+        <div class="item item-atajo">item 1</div>
+        <div class="item item-atajo">item 2</div>
+        <div class="item item-atajo">item 3</div>
+        <div class="item item-atajo">item 4</div>
+        <div class="item item-atajo">item 5</div>
+        <div class="item item-atajo">item 6</div>
+      </div>
+    </div>
+
+    <h2>Span</h2>
+    <p>Con span podemos decir directamente CUANTO queremos ocupar</p>
+    <div class="code">grid-column: span2</div>
+    <p>Ejemplo de arriba, el elemento va a ocupar 2 columnas</p>
+
+    <div class="container">
+      <div class="grid-start-end">
+        <div class="item item2">item 1</div>
+        <div class="item item2">item 2</div>
+        <div class="item item2">item 3</div>
+        <div class="item item2">item 4</div>
+        <div class="item item2">item 5</div>
+        <div class="item item2">item 6</div>
       </div>
     </div>
   </body>
