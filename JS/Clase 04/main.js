@@ -123,3 +123,51 @@
 //- Escribir las funciones “sumar” , “restar” , “multiplicar” “dividir” que puedan recibir dos parámetros e imprima en consola el resultado de la operación matemática correspondiente
 
 //- Escribir una función que reciba dos números y una función como parámetros y que muestre en consola el resultado correspondiente a la operación matemática pasada como parámetro.
+
+function sumar(num1, num2) {
+  console.log(num1 + num2);
+}
+
+function restar(num1, num2) {
+  console.log(num1 - num2);
+}
+
+function multiplicar(num1, num2) {
+  console.log(num1 * num2);
+}
+
+function dividir(num1, num2) {
+  console.log(num1 / num2);
+}
+
+hacerOperación(4, 2, sumar);
+hacerOperación(4, 2, restar);
+hacerOperación(4, 2, multiplicar);
+hacerOperación(4, 2, dividir);
+
+//Con sintaxis de flecha
+
+const sumarAlt = (num1, num2) => {
+  console.log(num1 + num2);
+};
+
+const restarAlt = (num1, num2) => {
+  console.log(num1 - num2);
+};
+
+const multiplicarAlt = (num1, num2) => {
+  console.log(num1 * num2);
+};
+
+const dividirAlt = (num1, num2) => {
+  console.log(num1 / num2);
+};
+
+const hacerOperación = (num1, num2, fn) => {
+  fn(num1, num2);
+};
+
+hacerOperación(4, 2, sumar);
+hacerOperación(4, 2, restar);
+hacerOperación(4, 2, multiplicar);
+hacerOperación(4, 2, dividir);
