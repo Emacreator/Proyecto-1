@@ -87,10 +87,12 @@
 
 //Ejercicio 8
 
-const tablaMultiplicar = (num) => {
-  for (let i = 0; i <= 10; i++) {
-    console.log(`${num} x ${i} = ${num * i}`);
-  }
-};
+//const tablaMultiplicar = (num) => {
+//for (let i = 0; i <= 10; i++) {
+//console.log(`${num} x ${i} = ${num * i}`);
+//}
+//};
 
-tablaMultiplicar(9);
+//tablaMultiplicar(9);
+
+//Ejercicio 9
