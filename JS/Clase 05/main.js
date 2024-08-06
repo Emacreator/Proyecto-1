@@ -66,9 +66,31 @@
 
 //Ejercicio 6
 
-const calcularEdadEnDias = (edad) => {
-  const totalDias = edad * 365;
-  console.log(`Tu edad ${edad} en dias son ${totalDias}`);
+//const calcularEdadEnDias = (edad) => {
+//const totalDias = edad * 365;
+//console.log(`Tu edad ${edad} en dias son ${totalDias}`);
+//};
+
+//calcularEdadEnDias(29);
+
+//Ejercicio 7
+
+//for (let i = 1; i < 30; i++) {
+//if (i % 15 === 0) {
+//console.log(`${i} FizzBuzz`);
+//} else if (i % 3 === 0) {
+//console.log(`${i} Fizz`);
+//} else if (i % 5 === 0) {
+//console.log(`${i} Buzz`);
+//}
+//}
+
+//Ejercicio 8
+
+const tablaMultiplicar = (num) => {
+  for (let i = 0; i <= 10; i++) {
+    console.log(`${num} x ${i} = ${num * i}`);
+  }
 };
 
-calcularEdadEnDias(29);
+tablaMultiplicar(9);
