@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: "suse";
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.6);
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  transition: all 0.8s;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls button {
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: all 0.5 ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.prev {
+  border-radius: 0 5px 5px 0;
+}
+
+.next {
+  border-radius: 5px 0 0 5px;
+}
