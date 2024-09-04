@@ -16,6 +16,7 @@ const moveToSlide = () => {
 //Avanzar al siguiente slide y actualizar la posicion del slider
 const nextSlide = () => {
   if (slideIndex === slides.children.length - 1) {
+    // console.log("estas al final");
     slideIndex = 0;
   } else {
     slideIndex++;
@@ -25,12 +26,15 @@ const nextSlide = () => {
 
 const prevSlide = () => {
   if (slideIndex === 0) {
+    // console.log("estas al principio");
     slideIndex = slides.children.length - 1;
   } else {
     slideIndex--;
   }
   moveToSlide();
 };
+
+// console.log(slides.children);
 
 nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
